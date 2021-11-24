@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="591.0" prefWidth="873.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sortreader.sortReaderFXMLController">
+    <children>
+        <Label layoutX="18.0" layoutY="508.0" prefHeight="25.0" prefWidth="50.0" text="Search: " />
+        <Label layoutX="18.0" layoutY="545.0" prefHeight="25.0" prefWidth="50.0" text="Output: " />
+        <Button fx:id="choose" layoutX="18.0" layoutY="336.0" mnemonicParsing="false" onAction="#choose" prefHeight="30.0" prefWidth="399.0" text="Choose a file" />
+        <TableView fx:id="tableView" layoutX="3.0" layoutY="-1.0" prefHeight="324.0" prefWidth="867.0">
+            <columns>
+                <TableColumn fx:id="firstName" prefWidth="211.0" text="FirstName" />
+                <TableColumn fx:id="lastName" minWidth="0.0" prefWidth="283.0" text="LastName" />
+                <TableColumn fx:id="age" prefWidth="166.0" text="Age" />
+                <TableColumn fx:id="phoneNumber" prefWidth="206.0" text="PhoneNumber" />
+            </columns>
+        </TableView>
+        <TextField fx:id="search" layoutX="77.0" layoutY="508.0" prefHeight="25.0" prefWidth="336.0" />
+        <TextField fx:id="display" layoutX="77.0" layoutY="545.0" prefHeight="25.0" prefWidth="336.0" />
+        <Button fx:id="sortFirst" layoutX="43.0" layoutY="374.0" mnemonicParsing="false" onAction="#sortFirst" prefHeight="30.0" prefWidth="165.0" text="Sort by first name" />
+        <Button fx:id="sortLast" layoutX="43.0" layoutY="404.0" mnemonicParsing="false" onAction="#sortLast" prefHeight="30.0" prefWidth="165.0" text="Sort by last name" />
+        <Button fx:id="sortAge" layoutX="43.0" layoutY="436.0" mnemonicParsing="false" onAction="#sortAge" prefHeight="30.0" prefWidth="165.0" text="Sort by age" />
+        <Button fx:id="sortWhole" layoutX="43.0" layoutY="465.0" mnemonicParsing="false" onAction="#sortWhole" prefHeight="30.0" prefWidth="165.0" text="Sort all records" />
+        <Button fx:id="searchFirst" layoutX="235.0" layoutY="374.0" mnemonicParsing="false" onAction="#searchFirst" prefHeight="30.0" prefWidth="165.0" text="Search by first name" />
+        <Button fx:id="searchLast" layoutX="235.0" layoutY="404.0" mnemonicParsing="false" onAction="#searchLast" prefHeight="30.0" prefWidth="165.0" text="Search by last name" />
+        <Button fx:id="searchAge" layoutX="235.0" layoutY="436.0" mnemonicParsing="false" onAction="#searchAge" prefHeight="30.0" prefWidth="165.0" text="Search by age" />
+        <Button fx:id="helpfile" layoutX="235.0" layoutY="468.0" mnemonicParsing="false" onAction="#helpfile" prefHeight="30.0" prefWidth="165.0" text="How to Use" />
+        <Label layoutX="453.0" layoutY="336.0" prefHeight="45.0" prefWidth="187.0" text="Add a record">
+            <font>
+                <Font size="30.0" />
+            </font>
+        </Label>
+        <TextField fx:id="txtfirst" layoutX="453.0" layoutY="381.0" prefHeight="25.0" prefWidth="384.0" />
+        <TextField fx:id="txtlast" layoutX="453.0" layoutY="420.0" prefHeight="25.0" prefWidth="384.0" />
+        <TextField fx:id="txtage" layoutX="453.0" layoutY="455.0" prefHeight="25.0" prefWidth="384.0" />
+        <TextField fx:id="txtphone" layoutX="453.0" layoutY="495.0" prefHeight="25.0" prefWidth="384.0" />
+        <Button fx:id="add" layoutX="453.0" layoutY="530.0" mnemonicParsing="false" onAction="#addRecord" prefHeight="30.0" prefWidth="384.0" text="Add record" />
+    </children>  
+</AnchorPane>
